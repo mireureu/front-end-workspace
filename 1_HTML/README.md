@@ -130,3 +130,53 @@
 - 제목 표시
 - h1(큰 제목) ~ h6(작은 제목)
 - 줄 바꿈 + 볼드체 적용
+
+## pre(Paragraph)
+
+- 문단 구분
+
+
+## br(Break)
+
+- 줄 바꿈
+
+## hr(Horizontal)
+
+- 수평 줄
+
+## pre(Preformat)
+
+- 입력하는 대로 화면에 표시
+
+## b(Bold), strong
+
+- 글자를 강조
+- 굵게 표시
+
+## i(Itelic), em(Emphasized)
+
+## u(Underline)
+
+- 글자에 밑줄
+
+## s(Strikethrough)
+
+- 취소선
+
+## mark
+
+- 형광펜
+
+## small
+
+- 글자를 작게
+
+## sup(Superscript Text), sub(Subscript Text)
+
+- 위/아래 첨자
+
+## q, blockquote
+
+- 글을 인용할 경우
+
+## abbr(Abbreviation)
