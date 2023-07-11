@@ -120,3 +120,13 @@
 <meta name="description" content="문서 설명">
 <meta name="author" contet="문서 작성자">
 ```
+
+- keywords를 사용함으로 옛날에는 검색되게끔 했지만 고환 키워드 추가로
+현재는 검색 엔진에서 사용하지 않는다. (구글은 가능) 
+
+
+## hn(Heading)
+
+- 제목 표시
+- h1(큰 제목) ~ h6(작은 제목)
+- 줄 바꿈 + 볼드체 적용
