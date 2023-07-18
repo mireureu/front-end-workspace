@@ -2,6 +2,7 @@
 
 - [선택자](#선택자)
 - [텍스트 스타일](#텍스트-스타일)
+- [색상 및 배경 스타일](#색상-및-배경-스타일)
 
 ## CSS(Cascading Style Sheet)
 
@@ -412,3 +413,71 @@ font: font-style font-variant font-weight font-size/line-height font-family;
 
 - clip : 영역을 넘어가는 텍스트를 자른다.
 - ellipsis : 말 줄임으로 잘린 텍스트를 표현한다.
+
+<br>
+
+# 색상 및 배경 스타일
+
+[위로 이동](#목차)
+
+## 색상 표현 방법
+
+### 색상 이름 표기법
+
+- 영문으로 색상 이름을 표시하는 방법
+- 모든 브라우저에서 표현할 수 있는 색상을 웹 안전 색상(Web Safe Colors)
+- 216가지
+
+### 16진수 표기법
+
+- #기호 다음에 6자리 16진수로 표시하는 방법
+- 6자리는 앞에서부터 두 자리씩 묶어서 Red, Green, Blue로 표시
+- #000000(검은색) ~ #ffffff(흰색)
+
+### rgb/rgba 표기법
+
+- rgb 표기법은 16진수 표기법과 다르게 10진수로 Red, Green, Blue를 표시
+- rgba 표기법은 rgb에 불투명도 값을 추가로 지정 (0은 완전 투명, 1은 완전 불투명)
+
+```css
+rgb(red(0~255), green(0~255), blue(0~255));
+rgba(red(0~255), green(0~255)blue(0~255), alpha(0~1));
+```
+
+### hsl/hsla 표기법
+
+- hsl 표기법은 앞에서부터 색상(Hue), 채도(Saturation), 밝기(Brightness)를 표시
+- hsla 표기법은 hsl에 불투명도 값을 추가로 지정 (0은 완전 투명, 1은 완전 불투명)
+- 색상(Hue)은 색상환으로 표시(0, 360 빨간색, 120 초록색, 240 파란색)
+- 채도는 %로 표시 (0%는 회색톤, 100%는 순색)
+- 밝기는 %로 표시 (0%는 가장 어둡고, 100%는 가장 밝다.)
+
+```css
+hsl(Hue(0~360), Saturation(0~100%), Brightness(0~100%));
+hsla(Hue(0~360), Saturation(0~100%), Brightness(0~100%), alpha(0~1));
+```
+
+## background-color
+
+- 배경색을 지정하는 속성
+
+```css
+선택자{
+    background-color: 색상;
+}
+```
+
+
+## background-clip
+
+- 배경색의 범위를 지정하는 속성
+
+```ㅊㄴㄴ
+선택자 {
+    background-clip : border-box or padding-box or content-box;
+}
+```
+
+- border-box : 테두리(border)까지 적용 (기본값)
+- padding-box : 테두리를 뺀 패딩(padding) 범위까지 적용
+- content-box : 내용(content) 부분에만 적용
