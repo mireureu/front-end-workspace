@@ -1,0 +1,84 @@
+header{
+    background-color: white;
+    border-bottom: 1.5px solid #ddd;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 60px;
+}
+header nav{
+    margin-right: 20px;
+}
+header nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    line-height: 60px;
+    display: inline-block;
+    /* background-color: aqua; 범위 확인하기위해 씀 제발 기억해 */ 
+    padding: 0 10px;
+}
+header nav a:hover{
+    color: tomato;
+}
+
+main{
+    padding-top: 60px;
+}
+main section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main #section1 {
+    background-color: red;
+    display: flex;
+}
+main #section2 {
+    background-color: purple;
+}
+main #section3 {
+    background-color: yellow;
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main section p{
+    width: 50%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+#top {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#top a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(249, 244, 237);
+}

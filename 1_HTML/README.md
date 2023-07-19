@@ -738,4 +738,43 @@
 }
 ```
 
- 
+ [위로 이동](#목차)
+
+# 반응형 웹
+
+- 구간 별 페이지 제작 : pc. tablet, mobile
+- viewport : 스마트폰 화면에서 실제 내용이 표시되는 영역
+
+```html
+<meta name="viewport" content="속성1=값1, 속성2=값2, ...">
+```
+
+- width : 뷰포트 너비 (device-width or 크기)
+- height : 뷰포트 높이 (device-height or 크기)
+- user-scalable : 확대/축소 가능 여부 (yes or no, yes : 기본값)
+- initial-scale : 초기 확대/축소 값 (1 ~ 10, 1 : 기본값)
+- minimum-scale : 최소 확대/축소 값 (0 ~ 10, 0.25 : 기본값)
+- maximum-scale : 최대 확대/축소 값 (0 ~ 10, 1.6 : 기본값)
+
+## 미디어 쿼리(Media Queries)
+
+- 사이트에 접속하는 장치에 따라 특정한 CSS 스타일을 적용
+
+```css
+@media 미디어유형 [and 조건] ... {
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 360px) {
+  ...
+}
+
+@media screen and (min-width: 700px){
+
+}
+```
+
+<br>
+[위로 이동](#목차)
+
+# Flex(Flexible Box, Flexbox)
