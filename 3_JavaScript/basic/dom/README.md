@@ -188,3 +188,20 @@ const 자식객체 = document.createElement
 ```js
 부모객체(문서객체.parentNode).removeChild(자식객체)
 ```
+
+# 이벤트
+
+- 모든 문서 객체에는 클릭되거나 마우스 위에
+올리거나 등 이벤트를 가지고 있다.
+
+## 이벤트 추가
+
+```
+문서객체.addEventListener(이벤트이름, 함수)
+```
+
+## 이벤트 삭제
+
+```js
+문서객체.removeEventListener(이벤트이름,함수)
+```

@@ -1,0 +1,64 @@
+body{  
+    background: linear-gradient(rgb(250, 139, 139), rgb(95, 73, 190));
+    height: 50vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    
+}
+.square{
+    margin: 1px;
+}
+.square:nth-child(1){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(255, 93, 174, 0.8);
+    animation: Ani 0.5s infinite alternate;;
+}
+.square:nth-child(2){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(255, 93, 174, 0.8);
+    animation: Ani 0.3s infinite alternate;;
+}
+.square:nth-child(3){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(225, 71, 148, 0.8);
+    animation: Ani 0.2s infinite alternate;;
+}
+.square:nth-child(4){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(234, 49, 142, 0.8);
+    animation: Ani 0.1s infinite alternate;;
+}
+.square:nth-child(5){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(222, 27, 125, 0.8);
+    animation: Ani 0.4s infinite alternate;;
+}
+.square:nth-child(6){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(255, 0, 128, 0.8);
+    animation: Ani 0.2s infinite alternate;;
+}
+.square:nth-child(7){
+    width: 3px;
+    height: 50px;
+    background-color: rgba(255, 169, 255, 0.8);
+    animation: Ani 0.3s infinite alternate;;
+}
+@keyframes Ani {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
