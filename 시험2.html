@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 800px;
+            height: 800px;
+            border: solid 1px rgb(31, 195, 255);
+            background-color: rgb(198, 253, 253);
+        }
+        fieldset{
+            font-size: 20px;
+            width: 50%;
+            height: 50%;
+            margin-left: 200px;
+            margin-top: 200px;
+            border: solid 1px rgb(161, 161, 161);
+            background-color: rgb(254, 254, 254);
+        }
+        fieldset span{
+            font-size: 13px;
+            margin-left: 100px;
+            color: gray;
+        }
+        input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: dashed ;
+        }
+        button{
+            margin-top: 170px;
+            margin-left: 10px;
+            width: 400px;
+            height: 60px;
+            border: solid 1px rgb(156, 255, 153);
+            background-color: rgb(197, 255, 220);
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        input:nth-child(2){
+            margin-left: 30px;
+            width: 200px;
+        }
+        input:nth-child(5){
+            margin-left: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="">아이디 : </label>
+            <input type="id" id="id" name="id">
+            <br>
+            <label for="">패스워드 : </label>
+            <input type="password" id="password" name="password">
+            <br>
+            <span>영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</span>
+            <br>
+            <label for="">패스워드 확인 : </label>
+            <input type="passwordch" id="passwordch" name="passwordch">
+            <br>
+            <label for="">이메일 : </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="">주소 : </label>
+            <input type="addr" id="addr" name="addr">
+            <br>
+            <button type="submit"
+            name="submit">가입</button>
+        </fieldset>
+    </form>
+<script>
+    const id = document.querySelector('#id');
+    const password = document.querySelector('#password');
+    const passwordch = document.querySelector('#passwordch');
+    const email = document.querySelector('#email');
+    const addr = document.querySelector('#addr');
+
+    const test = /^[0-9A-Z-a-z]/
+
+
+    console.log(id);
+    console.log(password);
+
+    id.addEventListener('click', function(){
+        console.log(idcheck());
+    })
+
+    function idcheck(){
+        ch = /^[0-9A-Z-a-z]/;
+        return ch.test(id.value);
+    }
+
+    function pwcheck(){
+        GG
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

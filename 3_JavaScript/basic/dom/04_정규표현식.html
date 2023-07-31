@@ -89,11 +89,11 @@
         const area7 = document.querySelector('#area7');
         const str7 = "A1 B2 C3 d_4 e:5 `  ffg77--__\t가\n나\n다";
         area7.innerHTML += `/\\d/g : ${str7.replace(/\d/g, '($&)')}<br>`; // /[0-9]/g
-        area7.innerHTML += `/\\D/g : ${str7.replace(/\D/g, '($&)')}<br>`; // /[0-9]/g
-        area7.innerHTML += `/\\w/g : ${str7.replace(/\w/g, '($&)')}<br>`; // /[0-9]/g
-        area7.innerHTML += `/\\W/g : ${str7.replace(/\W/g, '($&)')}<br>`; // /[0-9]/g
-        area7.innerHTML += `/\\s/g : ${str7.replace(/\s/g, '($&)')}<br>`; // /[0-9]/g
-        area7.innerHTML += `/\\S/g : ${str7.replace(/\S/g, '($&)')}<br>`; // /[0-9]/g
+        area7.innerHTML += `/\\D/g : ${str7.replace(/\D/g, '($&)')}<br>`; // /[^0-9]/g
+        area7.innerHTML += `/\\w/g : ${str7.replace(/\w/g, '($&)')}<br>`; // /[0-9a-zA-Z_]/g
+        area7.innerHTML += `/\\W/g : ${str7.replace(/\W/g, '($&)')}<br>`; // /[^0-9a-zA-Z_]/g
+        area7.innerHTML += `/\\s/g : ${str7.replace(/\s/g, '($&)')}<br>`; // /[ \n\t]/g
+        area7.innerHTML += `/\\S/g : ${str7.replace(/\S/g, '($&)')}<br>`; // /[^ \n\t]/g
     </script>
     
     <h2>4. 연습</h2>
@@ -107,7 +107,7 @@
         const pno = document.querySelector('#pno');
         const check = document.querySelector('button');
         // 1단계 : 6글자-7글자
-        // let regExp = /^......-.......$/;123456-1234567/
+        // let regExp = /^......-.......$/;123456-1234567/ 
         // 2단계 : 숫자값6개-[1~4]숫자값6개
         // let regExp = /^\d{6}-[1-4]\d{6}$/;
         // console.log(regExp);
